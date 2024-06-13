@@ -1,18 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Banner />
+    <Titles />
+    <VideoDisplay />
+    <Description />
+    <ActivityDescription />
+    <ActivityDescription />
+    <ActivityDescription />
+    <ActivityDescription />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Banner from './components/Banner.vue'
+import VideoDisplay from './components/VideoDisplay.vue'
+import Titles from './components/Titles.vue'
+import Description from "./components/Description.vue"
+import ActivityDescription from './components/ActivityDescription.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Banner,
+    VideoDisplay,
+    Titles,
+    Description,
+    ActivityDescription
   }
 }
 </script>
+
 
 <style>
 #app {
@@ -21,6 +38,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0; /* Ensure no margin around the app */
+  padding: 0; /* Ensure no padding around the app */
 }
 </style>
+
