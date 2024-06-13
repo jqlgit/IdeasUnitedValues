@@ -6,8 +6,6 @@
     <Description />
     <ActivityDescription />
     <ActivityDescription />
-    <ActivityDescription />
-    <ActivityDescription />
   </div>
 </template>
 
